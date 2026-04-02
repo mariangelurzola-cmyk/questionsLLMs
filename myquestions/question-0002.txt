@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+import random
+
+def generar_caso_de_uso_normalizar_min_max():
+    df = pd.DataFrame({'A': np.random.uniform(0, 100, 10), 'B': np.random.uniform(50, 60, 10)})
+    cols = ['A']
+    input_data = {'df': df.copy(), 'columnas': cols}
+    df_res = df.copy()
+    for col in cols:
+        df_res[col] = (df_res[col] - df_res[col].min()) / (df_res[col].max() - df_res[col].min())
+    return input_data, df_res
