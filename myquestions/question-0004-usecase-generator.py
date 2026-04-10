@@ -1,3 +1,6 @@
+import numpy as np
+
+def generar_caso_de_uso():
 def calcular_presion_final(presion_inicial, tasa_perdida, horas):
     pass
 
