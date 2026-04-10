@@ -1,0 +1,3 @@
+Dado un DataFrame con datos de un parque solar: ['radiacion_w_m2', 'eficiencia_porcentaje'],
+crea una función que devuelva la eficiencia promedio de los momentos donde la 
+radiación fue superior a 800 W/m2. Si no hay registros, devuelve 0.0.
